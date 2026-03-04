@@ -1,0 +1,27 @@
+PROGRESSIVE FINE-TUNING SUMMARY
+======================================================================
+
+Training Stages:
+  Stage 0: Classifier head only (frozen backbone)
+  Stage 1: Head layers (image_fc + text_fc + classifier)
+  Stage 2-10: Progressive backbone unfreezing (1 block at a time)
+
+Checkpoints:
+  Stage 0: ✓ stage_0_classifier_only.pth
+  Stage 1: ✓ stage_1_head_layers.pth
+  Stage 2: ✓ stage_2_unfreeze_1_blocks.pth
+  Stage 3: ✓ stage_3_unfreeze_2_blocks.pth
+  Stage 4: ✓ stage_4_unfreeze_3_blocks.pth
+  Stage 5: ✓ stage_5_unfreeze_4_blocks.pth
+  Stage 6: ✓ stage_6_unfreeze_5_blocks.pth
+  Stage 7: ✓ stage_7_unfreeze_6_blocks.pth
+  Stage 8: ✗ stage_8_unfreeze_7_blocks.pth
+  Stage 9: ✗ stage_9_unfreeze_8_blocks.pth
+  Stage 10: ✗ stage_10_unfreeze_9_blocks.pth
+
+Best checkpoint: stage_7_unfreeze_6_blocks.pth
+
+Final Metrics:
+  Test Accuracy: 86.48%
+  Weighted F1-Score: 0.8642
+  Macro F1-Score: 0.8607

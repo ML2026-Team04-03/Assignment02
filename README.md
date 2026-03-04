@@ -9,8 +9,22 @@ Our model is a multi-modal approach, combining both the text description of the 
 
 The classes are the following: 
 
-**Black** – Landfill Waste
+**Black** – Landfill Waste 
 **Blue** – Recycling
 **Green** – Organics
 **TTR** – Residual Trash
+
+## Files
+### Model.py
+Our model is built with EfficientNetV2-M for images and Bag of Words for the text which are concatenated to two fully-connected layers.
+
+### Preprocesor.py
+**Image Preprocessing**
+During training we apply vast amounts of transformations to avoid overfitting and generalize our models as well as possible. 
+
+### Garbage_classification.py
+### Statistics Folder
+
+**Our steps**
+
 

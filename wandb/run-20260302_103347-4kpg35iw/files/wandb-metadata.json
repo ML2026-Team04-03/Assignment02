@@ -1,0 +1,76 @@
+{
+  "os":  "Linux-4.18.0-553.89.1.el8_10.x86_64-x86_64-with-glibc2.28",
+  "python":  "CPython 3.10.4",
+  "startedAt":  "2026-03-02T17:33:47.963533Z",
+  "program":  "/home/ephrem.yekun/TALC-4/garbage_classification.py",
+  "codePath":  "TALC-4/garbage_classification.py",
+  "codePathLocal":  "garbage_classification.py",
+  "email":  "ephrem.yekun@gmail.com",
+  "root":  "/home/ephrem.yekun/TALC-4",
+  "host":  "t1",
+  "executable":  "/home/ephrem.yekun/my_evn/bin/python",
+  "cpu_count":  12,
+  "cpu_count_logical":  12,
+  "gpu":  "Tesla T4",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "10737418240",
+      "used":  "8009437184"
+    }
+  },
+  "memory":  {
+    "total":  "201373384704"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "Tesla T4",
+      "memoryTotal":  "16106127360",
+      "cudaCores":  2560,
+      "architecture":  "Turing",
+      "uuid":  "GPU-8fe81b8f-3b7d-4b2a-e75b-48040c4300a3"
+    }
+  ],
+  "cudaVersion":  "12.6",
+  "slurm":  {
+    "cluster_name":  "talc-admin",
+    "conf":  "/etc/slurm/slurm.conf",
+    "cpus_on_node":  "2",
+    "cpus_per_task":  "2",
+    "gpus_on_node":  "1",
+    "gtids":  "0",
+    "job_account":  "all",
+    "job_cpus_per_node":  "2",
+    "job_end_time":  "1772516014",
+    "job_gid":  "361075771",
+    "job_gpus":  "0",
+    "job_id":  "600973",
+    "job_name":  "garbage-images",
+    "job_nodelist":  "t1",
+    "job_num_nodes":  "1",
+    "job_partition":  "gpu",
+    "job_qos":  "normal",
+    "job_start_time":  "1772472814",
+    "job_uid":  "361075771",
+    "job_user":  "ephrem.yekun",
+    "jobid":  "600973",
+    "localid":  "0",
+    "mem_per_node":  "16384",
+    "nnodes":  "1",
+    "nodeid":  "0",
+    "nodelist":  "t1",
+    "nprocs":  "1",
+    "ntasks":  "1",
+    "oom_kill_step":  "0",
+    "prio_process":  "0",
+    "procid":  "0",
+    "submit_dir":  "/home/ephrem.yekun/TALC-4",
+    "submit_host":  "talc",
+    "task_pid":  "962707",
+    "tasks_per_node":  "1",
+    "topology_addr":  "t1",
+    "topology_addr_pattern":  "node",
+    "tres_per_task":  "cpu=2"
+  },
+  "writerId":  "rb9ps8yv6mo95ae92wv5lbpixzr86ysu"
+}
