@@ -1,5 +1,6 @@
 # Assignment02
 Garbage Classification Model - Programming Assignment 
+ENEN 645 Group 3 and ENSF 617 Group 4
 
 This repository contains our solution for the Garbage Classification Assignmnent. 
 
