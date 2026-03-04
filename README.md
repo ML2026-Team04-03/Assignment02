@@ -25,13 +25,15 @@ This file implements the data preprocessing and dataset loading pipeline for the
 ### Garbage_classification.py
 This script implements the full training pipeline for the multimodal garbage classification model.
 
-To handle data imbalance, we use: 
+Some techniques we used:
 
-- Inverse frequency weighting to penalize minority classes with higher loss 
+- To handle data imbalance, we use 
 
-- Label smoothing using soft targets (0.1 smoothing) instead of hard one-shot 
+    - Inverse frequency weighting to penalize minority classes with higher loss 
 
-- Monitoring F1-scores (weighted & macro), not just accuracy 
+    - Label smoothing using soft targets (0.1 smoothing) instead of hard one-shot 
+
+    - Monitoring F1-scores (weighted & macro), not just accuracy 
 
 - Different augmentation techniques to prevent overfitting and improve generalization 
 
