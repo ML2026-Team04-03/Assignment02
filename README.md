@@ -1,5 +1,5 @@
 # Assignment02
-Garbage Classification Model - Programming Assignment
+Garbage Classification Model - Programming Assignment 
 
 This repository contains our solution for the Garbage Classification Assignmnent. 
 
@@ -39,7 +39,7 @@ Some techniques we used:
 
 - Progressive fine tuning by unfreezing blocks of the model progressively and see if the performance improved 
 
-- Dropout to the text input and text modality to reduce overreliance on text when training.
+- Dropout to the text input and text modality to reduce overreliance on text in training.
 
 ### Outputs Folder
 The output folder contains the confusion matrix, examples of misclassified images, a csv file of our test predictions, as well as statistics for our different training stages. 
