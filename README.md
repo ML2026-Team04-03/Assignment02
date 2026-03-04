@@ -16,15 +16,32 @@ The classes are the following:
 
 ## Files
 ### Model.py
-Our model is built with EfficientNetV2-M for images and Bag of Words for the text which are concatenated to two fully-connected layers.
+Our model is built with EfficientNetV2-M for images and Bag of Words for the text which are concatenated to two fully-connected layers. We have also experimented with EfficientNetV2-S, but achieved better results with the M variant.
 
 ### Preprocesor.py
-**Image Preprocessing**
-During training we apply vast amounts of transformations to avoid overfitting and generalize our models as well as possible. 
+This file implements the data preprocessing and dataset loading pipeline for the multimodal garbage classification model. It applies image augmentations during training, extracts text features from image filenames and converts them into bag-of-words vectors. The module also provides utilities for building the vocabulary, counting dataset images and computing class weights for imbalanced data. 
+
 
 ### Garbage_classification.py
-### Statistics Folder
+This script implements the full training pipeline for the multimodal garbage classification model.
 
-**Our steps**
+To handle data imbalance, we use: 
+
+- Inverse frequency weighting to penalize minority classes with higher loss 
+
+- Label smoothing using soft targets (0.1 smoothing) instead of hard one-shot 
+
+- Monitoring F1-scores (weighted & macro), not just accuracy 
+
+- Different augmentation techniques to prevent overfitting and improve generalization 
+
+- Progressive fine tuning by unfreezing blocks of the model progressively and see if the performance improved 
+
+- Dropout to the text input and text modality to reduce overreliance on text when training.
+
+### Outputs Folder
+The output folder contains the confusion matrix, examples of misclassified images, a csv file of our test predictions, as well as statistics for our different training stages. 
+We chose the model that is represented in stage_7_unfreeze_6_blocks_curves.png .
+
 
 
